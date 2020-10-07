@@ -2,7 +2,7 @@ package com.cognizant.WeatherTday;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+@EnableJpaRepositories
 @SpringBootApplication
 public class WeatherTdayApplication {
 
