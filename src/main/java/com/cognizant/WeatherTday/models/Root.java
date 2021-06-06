@@ -10,6 +10,8 @@ public class Root {
     public int visibility;
     public Wind wind;
     public Clouds clouds;
+    public Rain rain;
+    public Snow snow;
     public int dt;
     public Sys sys;
     public int timezone;
@@ -21,7 +23,7 @@ public class Root {
         super();
     }
 
-    public Root(Coord coord, List<Weather> weather, String base, Main main, int visibility, Wind wind, Clouds clouds, int dt, Sys sys, int timezone, int id, String name, int cod) {
+    public Root(Coord coord, List<Weather> weather, String base, Main main, int visibility, Wind wind, Clouds clouds, Rain rain, Snow snow, int dt, Sys sys, int timezone, int id, String name, int cod) {
         this.coord = coord;
         this.weather = weather;
         this.base = base;
@@ -29,12 +31,30 @@ public class Root {
         this.visibility = visibility;
         this.wind = wind;
         this.clouds = clouds;
+        this.rain = rain;
+        this.snow = snow;
         this.dt = dt;
         this.sys = sys;
         this.timezone = timezone;
         this.id = id;
         this.name = name;
         this.cod = cod;
+    }
+
+    public Rain getRain() {
+        return rain;
+    }
+
+    public void setRain(Rain rain) {
+        this.rain = rain;
+    }
+
+    public Snow getSnow() {
+        return snow;
+    }
+
+    public void setSnow(Snow snow) {
+        this.snow = snow;
     }
 
     public Coord getCoord() {
