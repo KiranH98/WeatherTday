@@ -21,7 +21,9 @@ public class weatherService {
     private ResponseBody response;
     private  String API_ID = "005d618c85965267990c93f60fb12a83";
 
-
+/*
+method to get data from API and store in POJO can bbe done using RestTemplate
+*/
     public Root getWeather(String city){
         client = new OkHttpClient();
         ObjectMapper objectMapper = new ObjectMapper();
